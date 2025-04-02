@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Kaamulan Festival Counter</title>
+</head>
+<body>
+    <h1 id="title">Kaamulan Festival 2025 Counter</h1>
+    <h2 id="count-el">0</h2>
+    <div class="button-container">
+        <button id="increment-btn" onclick="increment()">INCREMENT</button>
+        <button id="decrement-btn" onclick="decrement()">DECREMENT</button>
+        <button id="reset-btn" onclick="reset()">RESET</button>
+        <button id="save-btn" onclick="save()">SAVE</button>
+    </div>
+
+    <div id="history-box">
+        <div class="history-header">
+            <h3>Previous Entries</h3>
+            <button id="clear-history-btn" onclick="clearHistory()">Clear History</button>
+        </div>
+        <ul id="save-el"></ul>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
